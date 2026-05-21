@@ -18,6 +18,10 @@
 
         <label for="senha">Senha</label>
         <input type="password" name="senha">
+        
+        <br><br>
+
+        <button type="submit">Entrar</button>
 
     </form>
 
