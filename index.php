@@ -10,11 +10,9 @@ $conn = new mysqli ($host,$user,$pass,$db);
 
 if($conn->connect_erro){
     die ("Erro na conexão");
-
-
-
-
-
+}else{
+    // echo "<p>Banco : OK <\p>";
+    echo "<script> console.log ('banco : OK ')</script>";
 }
 ?>
 
