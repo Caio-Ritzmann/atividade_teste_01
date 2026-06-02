@@ -1,8 +1,10 @@
 <?php
-    session_start();
-
+   //inicia sessao
+   session_start();
+//traz o database para o code php
     include("infra/db/connect.php");
 
+    //se o servidor 
     if($_SERVER['REQUEST_METHOD'] == "POST"){
 
         $usuario = $_POST["usuario"];

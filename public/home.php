@@ -1,4 +1,5 @@
 <?php
+//onde o usuario tem o local onde se cadastrar
 session_start();
 if(!isset($_SESSION["usuario"])){
     header("Location: ../index.php");
