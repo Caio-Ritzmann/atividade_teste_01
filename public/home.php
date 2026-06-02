@@ -5,13 +5,14 @@ if(!isset($_SESSION["usuario"])){
     header("Location: ../index.php");
     exit();
 }
-
+// conecta o DB
 include("../infra/db/connect.php");
-
+//transforma o servidor em post
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+    // coloca os novos dados pro DB
     $novoUsuario = $_POST['usuario'];
     $novaSenha = $_POST['senha'];
-
+    //coloca na tabela
     $sql = "INSERT INTO usuarios (usuario,senha) 
     VALUES ('$novoUsuario','$novaSenha')";  
 
